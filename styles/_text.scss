@@ -1,0 +1,74 @@
+// styles for text.
+
+#text {
+
+}
+
+h1 {
+	font-family: space_bold;
+	font-size: 24px;
+	line-height: 20px;
+	color: $header-color;
+	&.hero-title {
+		padding: 0 0 0 30px;
+		font-size: 48px;
+		color: $white;
+		position: absolute;
+		display: inline;
+	}
+	&.section-title {
+		font-size: 36px;
+		padding-right: 10%;
+	}
+}
+
+h2 {
+	&.hero-title {
+		font-family: space_bold;
+		padding-left: 10%;
+		font-size: 20px;
+		line-height: 18px;
+	}
+}
+
+p {
+	font-family: poppins_light;
+	font-size: 18px;
+	line-height: 30px;
+	span.bold{
+		font-family: poppins_medium;
+	}
+	span.bolder {
+		font-family: poppins_semibold;
+	}
+	span.boldest {
+		font-family: poppins_bold;
+	}
+	&.console{
+		font-family: inconsolata;
+	}
+	&.mont-hair {
+		font-family: montserrat_hairline;
+	}
+	&.mont-light {
+		font-family: montserrat_light;
+	}
+	&.mont-reg {
+		font-family: montserrat_regular;
+	}
+	&.mont-bold {
+		font-family: montserrat_semibold;
+	}
+	&.code {
+		background: rgba($black, 0.15);
+		padding: 10px;
+		border-radius: 5px;
+		display: inline-block;
+		margin: 0;
+	}
+	&.intro {
+		padding: 0 10%;
+	}
+	display: block;
+}
+

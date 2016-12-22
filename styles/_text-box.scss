@@ -1,0 +1,11 @@
+// Styles for text boxes. 
+// INPUTS
+input[type="text"] {
+	height: 25px;
+	border: 1px solid $grey-mid;
+	border-radius: 2px;
+	background: $white;
+	&:disabled {
+		background: $grey-light;
+	}
+}

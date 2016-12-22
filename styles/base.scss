@@ -1,0 +1,86 @@
+@import 'reset';
+@import 'fonts';
+@import 'color-scheme';
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	height: auto;
+	#hero {
+		background-color: rgba(0,0,0,0.3);
+	}
+	> section {
+		border-bottom: 1px solid $grey-mid;
+	}
+	section {
+		clear: left;
+		padding: 50px 20px;
+		.left {
+			width: 25%;
+			float: left;
+			height: auto;
+			text-align: right;
+		}
+
+	p {
+		font-size: 16px;
+	}
+}
+
+.intro {
+	> p {
+		padding: 0 10%;
+	}
+	> h1 {
+		font-size: 2.0em;
+		padding: 0 20px;
+		line-height: 2.4em;
+	}
+	padding-bottom: 40px;
+
+}
+		
+		.right {
+			width: auto;
+			padding-left: 20px;
+			overflow: hidden;
+						> hr {
+				// display: block;
+				background: transparent;
+			}
+			> h1 {
+				border-bottom: 10px solid $teal-01;
+				display: table;
+				font-size: 24px;
+				font-family: space_bold;
+				color: rgba(0, 0, 0, 0.8);
+				opacity: 0.8;
+			}
+			> h1:not(:first-child) {
+				padding-top: 50px;
+			}
+
+		}
+	}
+
+
+.wrapper {
+	max-width: 400px;
+	display: inline-block;
+}
+
+@import 'text';
+@import 'buttons';
+@import 'accordion';
+@import 'dropdown-mini';
+@import 'file-dropdown';
+@import 'radio-buttons';
+@import 'popup';
+@import 'slider';
+@import 'bool-switch';
+@import 'text-box';
+@import 'number-picker';
+@import 'hr';
