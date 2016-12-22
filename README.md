@@ -2,7 +2,7 @@
 
 ##Some things still have to be done:
 
-~~- radio buttons~~ Done! 
+- ~~radio buttons~~ Done! 
 - popup styles
 - anchor tags
 - fix dropdowns
