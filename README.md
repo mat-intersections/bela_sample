@@ -1,6 +1,6 @@
-##A pattern library for Bela
+#A pattern library for Bela
 
-#Some things still have to be done:
+##Some things still have to be done:
 
 - radio buttons
 - popup styles
