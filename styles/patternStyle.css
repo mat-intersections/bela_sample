@@ -287,6 +287,67 @@ button {
     border-right: rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid rgba(0, 0, 0, 0.2); }
 
+.radio {
+  font-family: inherit; }
+  .radio > ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    .radio > ul > li {
+      color: #AAAAAA;
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%; }
+      .radio > ul > li > input[type=radio] {
+        position: absolute;
+        visibility: hidden; }
+      .radio > ul > li > label {
+        display: block;
+        position: relative;
+        font-family: poppins_light;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.85);
+        padding: 0 0 0 80px;
+        margin: 10px auto;
+        z-index: 9;
+        cursor: pointer;
+        -webkit-transition: all 0.25s linear; }
+      .radio > ul > li > .check {
+        display: block;
+        position: absolute;
+        border: 4px solid rgba(189, 189, 189, 0.8);
+        border-radius: 100%;
+        height: 13px;
+        width: 13px;
+        top: 12px;
+        left: 20px;
+        z-index: 5;
+        transition: border .2s ease-in-out;
+        -webkit-transition: border .2s ease-in-out; }
+      .radio > ul > li:hover .check {
+        border-color: rgba(0, 190, 164, 0.6); }
+      .radio > ul > li > .check::before {
+        display: block;
+        position: absolute;
+        content: '';
+        border-radius: 100%;
+        height: 7px;
+        width: 7px;
+        top: 3px;
+        left: 3px;
+        margin: auto;
+        transition: background 0.17s ease-in-out;
+        -webkit-transition: background 0.17s ease-in-out; }
+  .radio input[type=radio]:checked ~ .check {
+    border: 4px solid #00bea4; }
+  .radio input[type=radio]:checked ~ .check::before {
+    background: rgba(0, 190, 164, 0.5); }
+  .radio input [type="radio"] {
+    display: none; }
+
 button.accordion {
   border: none;
   border-bottom: 2px solid #fff;

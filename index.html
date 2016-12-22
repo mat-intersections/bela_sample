@@ -154,6 +154,23 @@
 					</div>
 				</div>
 			</div>
+
+			<h1>Dropdown menu: Files</h1>
+			<div class="wrapper">
+				<span class="dropdown">
+					<button class="file-dropdown" name="project-dropdown">Select a project ...</button>
+					<div id="project-dropdown" class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</span>
+			</div>
+
+			<h1>Dropdown menu: mini</h1>
+			<div class="wrapper">
+				Dropdown mini, active and disabled
+			</div>
 		</div>
 	</section>
 
@@ -202,16 +219,28 @@
 				<input class="range-slider" type="range" disabled></input>
 			</div>
 
-		<h1>Dropdown: List of files/projects</h1>
-		<span class="dropdown">
-			<button class="file-dropdown" name="project-dropdown">Select a project ...</button>
-			<div id="project-dropdown" class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
+		<h1>Radio buttons</h1>
+		<div class="wrapper">
+			<p>A radio button is used to indicate a single choice from a range of options.
+			<div class="radio">
+				<ul>
+					<li><input type="radio" id="cplus" name="selector">
+					<label for="cplus">C++</label>
+					<div class="check"></div>
+					</li>
+
+					<li><input type="radio" id="pd" name="selector">
+					<label for="pd">Pure Data</label>
+					<div class="check"></div>
+					</li>
+
+					<li><input type="radio" id="supercollider" name="selector">
+					<label for="supercollider">Super Collider</label>
+					<div class="check"></div>
+					</li>
+				</ul>
 			</div>
-		</span>
-		
+
 		</div>
 
 	</section>

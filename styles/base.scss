@@ -72,12 +72,20 @@ body {
 	display: inline-block;
 }
 
+@mixin normal-text {
+  font: {
+    family: poppins_light;
+    size: 16px;
+  }
+  color: rgba($black, 0.85);
+}
+
 @import 'text';
 @import 'buttons';
+@import 'radio';
 @import 'accordion';
 @import 'dropdown-mini';
 @import 'file-dropdown';
-@import 'radio-buttons';
 @import 'popup';
 @import 'slider';
 @import 'bool-switch';
