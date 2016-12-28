@@ -16,11 +16,41 @@ body {
 	}
 }
 
-#main {
-	height: auto;
-	#hero {
-		background-color: rgba(0,0,0,0.3);
+#hero {
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 130px;
+	width: 100%;
+	padding: 50px 0 50px 100px;
+	background-color: $white;
+	box-shadow: 5px 5px 5px $grey-light;
+	position: fixed;
+	z-index: 100;	
+	> img {
+		height: 130px;
+		width: auto;
+		transition: height 0.3s ease;
 	}
+	&.shrink {
+		height: 80px;
+		padding: 15px 0 15px 100px;
+		transition: height 0.4s ease;
+		img {
+			height: 70px;
+			width: auto;
+			transition: 0.4s ease;
+		}
+	}
+	transition: height 0.3s ease;
+}
+#main {
+	display: block;
+	height: auto;
+	padding-left: 0;
+	padding-top: 20px;
+	margin-top: 200px;
+	
 	> section {
 		border-bottom: 1px solid $grey-mid;
 	}
