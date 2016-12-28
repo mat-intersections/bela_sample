@@ -12,6 +12,7 @@ input[type="text"].input-number  {
   outline: none;
   font-family: poppins_regular;
   border-radius: 0;
+  border-color: $grey-mid;
   &:disabled {
     border-radius: 0;
     width: 50px;
@@ -19,10 +20,13 @@ input[type="text"].input-number  {
 }
 
 .decrement, .increment {
+  font-size: 0.1em;
+  padding-top: 7px;
+  max-height: 16px;
   display: inline-block;
   width: 25px;
-  max-height: 23px;
-  line-height: 25px;
+  
+  line-height: 22px;
   background: $grey-light;
   color: rgba(0, 0, 0, 0.8);
   text-align: center;

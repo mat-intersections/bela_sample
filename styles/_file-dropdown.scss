@@ -23,8 +23,8 @@ button.file-dropdown {
         right: 12px;
     }
     &:hover, &:focus {
-        background-color: rgba(0, 190, 164, 0.8);
-        border-color: rgba(0, 190, 164, 0.8);
+        background-color: rgba($teal-main, 1.0);
+        border: 2px solid rgba($teal-main, 0.8);
         color: white;
 
         &:before {
@@ -58,22 +58,27 @@ button.file-dropdown {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
     
     /* Links inside the dropdown */
     a {
         opacity: 1;
-        font-family: poppins_regular;
-        font-size: 10px;
+        font-family: poppins_light;
+        font-size: 12px;
         color: black;
         padding: 8px 16px;
         text-decoration: none;
         display: block;
-    }
-        a:hover {
+        &:hover {
             background-color: $grey-light;
             color: rgba(0, 0, 0, 0.9);
         }
+        &:after {
+            border: none;
+        }
+    }
 }
 .show {
     display: block;
+    transition: $trans-reg 0.2s linear;
 }

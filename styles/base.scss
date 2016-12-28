@@ -1,10 +1,19 @@
 @import 'reset';
+@import 'behaviours';
 @import 'fonts';
 @import 'color-scheme';
+@import 'table';
 
 body {
 	margin: 0;
 	padding: 0;
+	font-family: $font-body;
+	font-size: $font-size;
+	line-height: $line-height;
+	z-index: 90;
+	*:focus {
+		outline: none;
+	}
 }
 
 #main {
@@ -39,6 +48,12 @@ body {
 		padding: 0 20px;
 		line-height: 2.4em;
 	}
+	> ul {
+		margin-left: 120px;
+		li {
+			margin-left: 20px;
+		}
+	}
 	padding-bottom: 40px;
 
 }
@@ -47,6 +62,9 @@ body {
 			width: auto;
 			padding-left: 20px;
 			overflow: hidden;
+			> ul {
+				padding-left: inherit;
+			}
 						> hr {
 				// display: block;
 				background: transparent;
@@ -68,9 +86,28 @@ body {
 
 
 .wrapper {
-	max-width: 400px;
+	width: 400px;
 	display: inline-block;
+	position: relative;
 }
+
+.left-choice {
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+	float: left;
+	clear: all;
+}
+
+.right-choice {
+	display: inline-block;
+	padding-left: 25px;
+	width: 43%;
+	text-align: left;
+	margin-top: 3px;
+	position: relative;
+}
+
 
 @mixin normal-text {
   font: {
@@ -80,15 +117,23 @@ body {
   color: rgba($black, 0.85);
 }
 
-@import 'text';
-@import 'buttons';
-@import 'radio';
-@import 'accordion';
-@import 'dropdown-mini';
-@import 'file-dropdown';
-@import 'popup';
-@import 'slider';
-@import 'bool-switch';
-@import 'text-box';
-@import 'number-picker';
-@import 'hr';
+@import 
+	// Most basic styles:
+	'text',
+	'table',
+	'lists',
+	// Inputs:
+	'buttons',
+	'radio',
+	'dropdown-mini',
+	'bool-switch',
+	'text-box',
+	'number-picker',
+	'slider',
+	'hr',
+	// Custom menus:
+	'accordion',
+	'file-dropdown',
+	// Other custom styles:
+	'popup'
+;

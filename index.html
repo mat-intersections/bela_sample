@@ -2,6 +2,7 @@
 <head>
 <title>Bela Pattern Library</title>
 <link rel="stylesheet" type="text/css" href="styles/patternStyle.css" />
+<link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css" />
 </head>
 
 <body>
@@ -14,10 +15,20 @@
 	</section>
 	<section>
 		<div class="intro">
-		<h1>Welcome to the Bela pattern reference.</h1>
+		<h1>Welcome to the Bela pattern Library.</h1>
 		<p>The purpose of a pattern library is to provide a cohesive description of the design elements (colours, font choices, appearance, etc) for an application or brand. This library is for the Bela browser-based IDE and web properties and describes all current design rules, but extends into all areas of the Bela brand (print and virtual). It is active and updated as it evolves.</p>
 
-		<p>In the forkable version of this reference the CSS is exhaustively componentized - for the sake of clarity and reproducability. This library uses jQuery, and all functionality is contained in the global.js file (under 100 lines). You're invited to fork this repo and have a look around.</p>
+		<p>A pattern library is never finished, and continuously evolves. As we add features or formalise their use, they will be added to this document.</p>
+
+		<p>In the forkable version of this reference the CSS is exhaustively componentized for the sake of clarity and reproducability. This library does most of its work with CSS, but does include jQuery (all JS functionality is contained in the global.js file, which is designed to be lightweight and is currently about 50 lines). Please fork this repo and have a poke around.</p>
+		<ul>
+		Current to-do list:
+			<li>Currently these components are optimised for Chrome. Functionality needs to be rolled out for IE, FF and other browsers.</li>
+			<li>Print patterns (logo use, CMYK values, paper types, etc) are currently missing. Slug content is needed, along with documented layout and margin rules.</li>
+			<li>Better ratification of padding/margin rules need to be implemented and documented.</li>
+			<li>CSS transition times are included as variables, but these need to be better documented and used more purposefully.</li>
+		</ul>
+		</p>
 
 		<p>For suggestions, please open a <a href="http://github.com/belaPlatform">Github</a> issue.</p>
 
@@ -36,7 +47,7 @@
 				<p>This is the usual font weight. <span class="bold">I can also be a bit bolder,</span> <span class="bolder">a little bolder still,</span> <span class="boldest">or really bold indeed.</span></p>
 				<p class="console">If I'm text in a console, I use a different font entirely: Inconsolata.</p>
 				<div class="wrapper">
-					<p class="console code">There's even a class for code.</p>
+					<span class="code">There's even a class for code.</span>
 				</div>
 
 				<h1>Print and other fonts</h1>
@@ -45,10 +56,10 @@
 				<p class="mont-light">This is Montserrat Light.</p>
 				<p class="mont-reg">This is Montserrat Regular.</p>
 				<p class="mont-bold">This is Montserrat Bold - usually our URLs are in this font.</p>
-				<p>This use of Montserrat may be phased out in future in favour of Poppins, though there has not yet been any specific decision made about this.</p>
+				<p>This use of Montserrat is being phased out, probably in favour of Poppins, though this isn't firm yet.</p>
 
 				<h1>Anchor tags</h1>
-				<p>Not
+				<p>Currently <a href='#'>this</a> is the style for links.</p>
 		</div>
 		<!-- This section displays different text elements. -->
 	</section>
@@ -59,15 +70,17 @@
 		</div>
 		<div class="right">
 			<h1>Bela's base color scheme</h1>
-				<p>The colour palette is derived from Google's Material palette, though it has been optimised for Bela's unique UI needs (and to align it with our print needs - we do a surprising amount of print!)</p>
-			<table>
+				<p>The colour palette is derived from Google's Material palette, though it has been optimised for Bela's unique UI needs.</p>
+
+				<p>This pattern library contains variables for the 6 core teal colours, and are used with aplha values with steps of 20%.</p>
+			<table class="color-table">
 				<tr>
 					<td><p>Opacity</p></td>
-					<td><p>Base:</p><p>#009587</p> </td>
-					<td><p>Main:</p><p>#00bea4</p> </td>
-					<td><p>Acc. 1</p><p>#1ce8b5</p> </td>
-					<td><p>Acc. 2</p><p>#63ffd9</p> </td>
-					<td><p>Acc. 3</p><p>#a6ffea</p> </td>
+					<td><p>$teal-base</p><p>#009587</p> </td>
+					<td><p>$teal-main</p><p>#00bea4</p> </td>
+					<td><p>$teal-01</p><p>#1ce8b5</p> </td>
+					<td><p>$teal-02</p><p>#63ffd9</p> </td>
+					<td><p>$teal-03</p><p>#a6ffea</p> </td>
 				</tr>
 				<tr style="height: 100px;">
 					<td><p>100%:</p></td>
@@ -111,21 +124,43 @@
 				</tr>
 			</table>
 
-			<h1>A note on text over colours</h1>
-			<p>When making text over a colour lighter, do not make the text grey - always use black (RGB 0,0,0 or #000000) and adjust the alpha value.</p>
-			<p style="display: inline">For example, the box on the left uses</p> <p class="console code" style="display: inline">color: rgba(0,0,0,0.5)</p>, <p style="display: inline">while the one on the right uses</p> <p class="console code " style="display: inline">color: #7d7d7d</p>. <p>The difference in readability is significant.</p>
-			<table>
-				<tr>
-					<td class="color accent-1" style="width: 100px; height: 100px;"><p style="color: rgba(0,0,0,0.5); font-size: 1em;">Readable!</p></td>
-
-					<td class="color accent-1" style="width: 100px; height: 100px;"><p style="color: #7d7d7d; font-size: 1em;">Less readable</p></td>
-				</tr>
-			</table>
-
 			<h1>Using grey</h1>
-			<p>An explanation of black, grey and how to use them.</p>
+			<p>Grey is a shade of black, not a hex value.</p>
+			<p>As with the colour scheme, the grey tones are variables within the pattern library system, though they are not in even steps of 20%. The grey values for each variable is listed below.</p>
+			<table class="color-table">
+				<tr>
+					<td><p>Opacity</p></td>
+					<td><p>Black</p></td>
+				</tr>
+				<tr>
+					<td><p>$black (100%)</p></td>
+					<td class="black"></td>
+				</tr>
+				<tr>
+					<td><p>$grey-dark (60%)</p></td>
+					<td class="grey-dark"></td>
+				</tr>
+				<tr>
+					<td><p>$grey-mid (30%)</p></td>
+					<td class="grey-mid"></td>
+				</tr>
+				<tr>
+					<td><p>$grey-light (10%)</p></td>
+					<td class="grey-light"></td>
+				</tr>
+				<tr>
+					<td><p>$grey-ultralight (5%)</p></td>
+					<td class="grey-ultralight"></td>
+				</tr>
+				</table>
 
 			<p>* Please note: These colour rules are for RGB only and do not extend to print.</p>
+
+			<h1>A note on text over colours</h1>
+			<p>When making text over a colour lighter, do not make the text grey - always use black (RGB 0,0,0 or #000000) and adjust the alpha value.</p>
+			<p style="display: inline">For example, the box on the left uses</p> <p class="console code" style="display: inline">color: rgba(0,0,0,0.5)</p>, <p style="display: inline">while the one on the right uses the equivalent hex code for middle grey, </p> <p class="console code " style="display: inline">color: #7d7d7d</p>. <p>There's definitely a difference in readability, particularly with higher resolution screens.</p>
+			<div class="readable"><p>Readable</p></div>
+			<div class="less-readable"><p>Less readable</div>
 		</div>
 		<!-- This section shows how colour should be used in all Bela projects. -->
 	</section>
@@ -156,6 +191,7 @@
 			</div>
 
 			<h1>Dropdown menu: Files</h1>
+			<p>This element should, traditionally, be an input drop-down. However I have taken the liberty of making it a bit fancy because picking a file name is a significant event that happens on its own as an atomic action, and is not part of a larger set of choices (the way that, for example, changing settings are where you might be adjusting many values as part of the action "changing settings"). Therefore, this is a list of links in a hidden <span class="code">div</span> element, instead of a list of options in a <span class="code">select</span> input element.</p>
 			<div class="wrapper">
 				<span class="dropdown">
 					<button class="file-dropdown" name="project-dropdown">Select a project ...</button>
@@ -168,10 +204,38 @@
 			</div>
 
 			<h1>Dropdown menu: mini</h1>
+				<p>This dropdown belongs in the Input section above, but it's good to have it here to see the difference between the file dropdown and this option dropdown.</p>
+
+				<p>In an option dropdown we can adjust the styling and mess with the shadow DOM a little, but some important functionality has to be maintained (which is why it's not just a file dropdown, like the one above). For example, an option dropdown should allow the user to select a number with the arrow keys or press enter to select, and tab to the next dropdown element. This is useful for situations such as the Settings tab where there's lots of small values to adjust, but isn't vital for choosing a project name, which is why we have taken liberties above but not here.</p>
+
+				<p>This dropdown has styles for both active and disabled states.</p>
 			<div class="wrapper">
-				Dropdown mini, active and disabled
+			<div class="left-choice">Choose a number:</div>
+				<div class="right-choice">
+					<span class="mini-dropdown">
+					<select type="text" id="block-size">
+						<option>65</option>
+						<option>456</option>
+						<option>3</option>
+						<option selected>68</option>
+						<option>263</option>
+					</select><!-- end dropdown span -->
+				</span>
+				</div><!-- end rightchoice -->
+				<br /><br />
+				<div class="left-choice">Choose another:</div>
+				<div class="right-choice">
+					<span class="mini-dropdown disabled">
+					<select disabled type="text" id="block-size">
+						<option>2</option>
+						<option>8</option>
+						<option>16</option>
+						<option selected>64</option>
+						<option>128</option>
+					</select><!-- end dropdown span -->
+					</span>
+				</div><!-- end rightchoice -->
 			</div>
-		</div>
 	</section>
 
 	<section id="inputs">
@@ -198,11 +262,11 @@
 			<h1>Number selectors</h1>
 			<p>Select a number:</p>
 			<span class="number-picker">
-				<span class="number decrement" name="example">–</span><input id="example" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="1"><span name="example" class="number increment">+</span>
+				<span class="number decrement" name="example"><i class="fa fa-minus"></i></span><input id="example" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="1"><span name="example" class="number increment"><i class="fa fa-plus"></i></span>
 			</span>
 			<p>Disabled selector: </p>
 			<span class="number-picker">
-				<span name="example-disabled" class="number decrement">–</span><input disabled id="example-disabled" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="0.1"><span name="example-disabled" class="number increment">+</span>
+				<span name="example-disabled" class="number decrement"><i class="fa fa-minus"></i></span><input disabled id="example-disabled" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="0.1"><span name="example-disabled" class="number increment"><i class="fa fa-plus"></i></span>
 			</span>
 
 			<h1>Text box inputs</h1>
@@ -246,6 +310,71 @@
 	</section>
 
 	<section>
+		<div class="left">
+			<h1 class="section-title">Data</h1>
+		</div>
+
+		<div class="right">
+			<h1>Tables</h1>
+			<p>Tables are used only to contain tabular data.</p>
+			<table>
+				<!-- The first row is the header row, and should be highlighted. -->
+				<tr>
+					<td>Name of data</td>
+					<td>Value 1</td>
+					<td>Value 2</td>
+					<td>Value 3</td>
+					<td>Value 4</td>
+				</tr>
+				<tr>
+					<td>Thing</td>
+					<td>5.67</td>
+					<td>6.98</td>
+					<td>4.25</td>
+					<td>2.64</td>
+				</tr>
+				<tr>
+					<td>Other thing</td>
+					<td>4.74</td>
+					<td>9.45</td>
+					<td>0.25</td>
+					<td>1.46</td>
+				</tr>
+				<tr>
+					<td>Another thing</td>
+					<td>5.46</td>
+					<td>1.75</td>
+					<td>1.68</td>
+					<td>4.26</td>
+				</tr>
+				<tr>
+					<td>Last thing</td>
+					<td>4.89</td>
+					<td>2.68</td>
+					<td>1.69</td>
+					<td>8.28</td>
+				</tr>
+			</table>
+
+			<h1>Unordered lists</h1>
+			<ul>
+				<li>Thing one<br />Things!</li>
+				<li>Thing two</li>
+				<li>Thing three</li>
+			</ul>
+
+			<h1>Ordered lists</h1>
+			<p>In order for ordered lists to be displayed correctly, the content inside the <span class="code">li</span> tag are wrapped in <span class="code">span</span> elements. You're right, it should be easier and fixed in CSS2, but here we are in CSS3, stylin the web like it's 1999.</p>
+			<ol>
+				<li><span>Thing one</span></li>
+				<li><span>Thing two</span></li>
+				<li><span>Thing three</span></li>
+			</ol>
+
+		</div>
+
+	</section>
+<!-- 	<section>
 		<h1 class="section-title">More stuff</h1>
 		<h1>Lists</h1>
 		File list with highlighting
@@ -256,7 +385,7 @@
 		Horizontal rules. 70% wide, colour shift.
 
 		<hr />
-	</section>
+	</section> -->
 
 </div>
 
