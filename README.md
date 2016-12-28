@@ -6,16 +6,20 @@ Sample is a pattern library lays out the design and layout conventions for a bra
 
 It is highly componentised, and relies mostly on CSS3 for functionality (though it also uses [jQuery](http://jquery.com/) and 50 lines of Javascript). It relies on the [Sass extension language](http://sass-lang.com/) for SCSS, and rolls all styles together using the included Gulp file. 
 
-To make changes: 
+##To make changes: 
 
 1. Fork this repo.
 2. Run gulp in the repo (the gulp file is already included).
 3. Write/test your SCSS.
 4. Make a pull request.
 
-##A note:
+##To open an Issue:
 
-This pattern library is designed for Chrome first, because the Bela IDE is 
+[Go here.](https://github.com/disastrid/bela_patternLibrary/issues)
+
+###Please note:
+
+This pattern library is designed for Chrome first, because the Bela IDE is currently Chrome-based. Therefore, the components are untested outside Chrome (the HTML and styling should render properly across browsers, but is untested). Please don't open cross-browser issues at this time, but please liberally flag up any inconsistencies in Chrome browsers!
 
 ##Some things still have to be done:
 
