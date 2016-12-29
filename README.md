@@ -2,9 +2,11 @@
 
 [logo]: https://raw.githubusercontent.com/disastrid/bela_patternLibrary/master/logo.png "Sample: A Library for Bela"
 
-Sample is a pattern library lays out the design and layout conventions for a brand or group of sites. This is the one for Bela.
+Sample is a pattern library. A pattern lays out the design and layout conventions for a brand or group of sites (if you're interested, there's a really good description [here](https://boagworld.com/design/pattern-library/)). This is the one for Bela's browser-based IDE and web presence. It lays out standards for visual things like design and behaviour, as well as code. 
 
-It is highly componentised, and relies mostly on CSS3 for functionality (though it also uses [jQuery](http://jquery.com/) and 50 lines of Javascript). It relies on the [Sass extension language](http://sass-lang.com/) for SCSS, and rolls all styles together using the included Gulp file. 
+Sample exists so Bela's design, interfaces and user experience can evolve, and things don't break every time something changes. It also exists so components can be easily extracted and applied to other projects where needed.
+
+Sample is highly componentised, and relies mostly on CSS3 for functionality (though it also uses [jQuery](http://jquery.com/) and about 50 lines of Javascript). It relies on the [Sass extension language](http://sass-lang.com/) for SCSS, and rolls all styles together using the included Gulp file. 
 
 ##To make changes: 
 
@@ -30,3 +32,5 @@ This pattern library is designed for Chrome first, because the Bela IDE is curre
 - block quotes
 - rules for icon use?
 - ~~ol/ul for web use~~ Done!
+
+Version 0.1, December 2016.
