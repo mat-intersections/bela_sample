@@ -23,11 +23,10 @@ a {
 		width: 100%;
     }
     transition-delay: 0.2s;
-    transition: $trans-reg ease-in-out;
-	
+    transition: $trans-reg ease-in-out;	
 }
 
-h1 {
+section h1 {
 	font-family: space_bold;
 	font-size: 24px;
 	line-height: 20px;
