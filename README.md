@@ -8,6 +8,12 @@ Sample exists so Bela's design, interfaces and user experience can evolve, and t
 
 Sample is highly componentised, and relies mostly on CSS3 for functionality (though it also uses [jQuery](http://jquery.com/) and about 50 lines of Javascript). It relies on the [Sass extension language](http://sass-lang.com/) for SCSS, and rolls all styles together using the included Gulp file. 
 
+##To view current library of patterns:
+1. Fork this repo.
+2. Open index.html in Chrome.
+
+This will render all current patterns and components in an active web page for perusal. From here you can open the Chrome developer tools to inspect components. HTML/SCSS (and JS where applicable) for each pattern is available in the forked repo.
+
 ##To make changes: 
 
 1. Fork this repo.
