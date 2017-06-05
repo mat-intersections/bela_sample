@@ -1,0 +1,25 @@
+{
+  "name": "pattern-library",
+  "version": "1.0.0",
+  "description": "This is a fork of the Bela pattern library made by Astrid, that we'll be reusing as a foundation for the Inter/section style guide.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mat-intersections/pattern-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mat-intersections/pattern-library/issues"
+  },
+  "homepage": "https://github.com/mat-intersections/pattern-library#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
