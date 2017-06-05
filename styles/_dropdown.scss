@@ -7,7 +7,7 @@ button.dropbtn {
     position: relative;
     width: 200px;
     background-color: #fff;
-    font-family: poppins_regular; 
+    font-family: $text-font-stack; 
     color: $teal-main;
     padding: 6px 16px;
     font-size: 14px;
@@ -65,7 +65,7 @@ button.dropbtn {
     /* Links inside the dropdown */
     a {
         opacity: 1;
-        font-family: poppins_regular;
+        font-family: $text-font-stack;
         font-size: 10px;
         color: black;
         padding: 8px 16px;

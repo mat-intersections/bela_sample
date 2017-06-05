@@ -103,7 +103,7 @@
 // 				border-bottom: 10px solid $teal-01;
 // 				display: table;
 // 				font-size: 24px;
-// 				font-family: space_bold;
+// 				font-family: $heading-font-stack;
 // 				color: rgba(0, 0, 0, 0.8);
 // 				opacity: 0.8;
 // 			}
@@ -141,7 +141,7 @@
 
 // @mixin normal-text {
 //   font: {
-//     family: poppins_light;
+//     family: $text-font-stack;
 //     size: 16px;
 //   }
 //   color: rgba($black, 0.85);
@@ -193,7 +193,7 @@ body {
 		padding-right: 170px;
 		margin-top: 27px;
 		position: relative;
-		font-family: poppins_light;
+		font-family: $text-font-stack;
 		> a {
 				position: absolute;
 				top: 3px;
@@ -239,7 +239,7 @@ body {
 		float: left;
 		width: 20%;
 		// border: 1px solid pink;
-		font-family: space_bold;
+		font-family: $heading-font-stack;
 		padding: 40px 20px 0;
 		transition: color 0.2s ease-in-out;
 		position: fixed;
@@ -252,6 +252,7 @@ body {
 			font-size: 14px;
 			color: $grey-dark;
 			padding: 0 0 0 40px;
+			text-transform: uppercase;
 			transition: color 0.2s, background 0.5s ease-in-out;
 				&:after {
 					border: none;
@@ -306,7 +307,7 @@ body {
 				cursor: pointer;
 				display: block;
 				padding: 5px 0 5px 40px;
-				font-family: space_regular;
+				font-family: $heading-font-stack;
 				font-size: 10px;
 				line-height: 14px;
 				transition: background 0.5s, color 0.1s ease-in-out;
@@ -338,7 +339,7 @@ body {
 				border-bottom: 8px solid rgba($teal-01, 0.6);
 				display: table;
 				font-size: 24px;
-				font-family: space_bold;
+				font-family: $heading-font-stack;
 				color: rgba(0, 0, 0, 0.8);
 				padding-bottom: 1px;
 				font-size: 30px;
@@ -351,7 +352,7 @@ body {
 				}
 			}
 			> h2 {
-				font-family: poppins_medium;
+				font-family: $text-font-stack;
 				color: rgba($black, 0.8);
 				&:not(:first-child) {
 					padding-top: 20px;
@@ -418,7 +419,7 @@ body {
 				border-bottom: 10px solid $teal-01;
 				display: table;
 				font-size: 24px;
-				font-family: space_bold;
+				font-family: $heading-font-stack;
 				color: rgba(0, 0, 0, 0.8);
 				opacity: 0.8;
 			}
@@ -456,7 +457,7 @@ body {
 
 @mixin normal-text {
   font: {
-    family: poppins_light;
+    family: $text-font-stack;
     size: 16px;
   }
   color: rgba($black, 0.85);

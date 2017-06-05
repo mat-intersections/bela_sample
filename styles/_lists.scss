@@ -24,14 +24,14 @@ ul {
 
 ol {
 	padding-left: 40px;
-	font-family: space_bold;
+	font-family: $heading-font-stack;
 	color: $teal-main;
 	margin-left: 20px;
 	> li {
 		position: relative !important;
 		padding-left: 20px;
 		> span {
-			font-family: poppins_light;
+			font-family: $text-font-stack;
 			color: $black;
 		}
 		

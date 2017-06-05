@@ -10,7 +10,7 @@ input[type="text"].input-number  {
   vertical-align: top;
   text-align: center;
   outline: none;
-  font-family: poppins_regular;
+  font-family: $text-font-stack;
   border-radius: 0;
   border-color: $grey-mid;
   &:disabled {

@@ -1,7 +1,7 @@
 // .dropdown-num select {
 //     width: 80px;
 //     background: transparent;
-//     font-family: poppins_light;
+//     font-family: $text-font-stack;
 //     appearance: none;
 //     -moz-appearance: none;
 //     -webkit-appearance: none;
@@ -14,7 +14,7 @@
     width: 72px;
     padding-left: 10px;
     background: transparent;
-    font-family: poppins_light;
+    font-family: $text-font-stack;
     -webkit-appearance: button;
     vertical-align: center;
     .git {

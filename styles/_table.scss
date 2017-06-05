@@ -4,7 +4,7 @@
 
 
 table {
-	font-family: poppins_light;
+	font-family: $text-font-stack;
 	font-size: 80%;
 	border-collapse: collapse;
 	tr:first-child {
@@ -28,7 +28,7 @@ table {
 .color-table {
 	background-color: $white;
 	tr:first-child {
-		font-family: space_bold;
+		font-family: $heading-font-stack;
 		background-color: white;
 		> td {
 			height: auto;
@@ -39,7 +39,7 @@ table {
 	}
 	tr > td {
 		&:first-child {
-			font-family: space_bold;
+			font-family: $heading-font-stack;
 			width: auto;
 			max-width: 100px;
 			min-width: 60px;
@@ -50,7 +50,7 @@ table {
 		width: 60px;	
 		height: 60px;
 		display: inline-block;
-		font-family: space_bold;
+		font-family: $heading-font-stack;
 		vertical-align: bottom;
 		color: white;
 		> p {
