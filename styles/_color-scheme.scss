@@ -1,11 +1,8 @@
-$white: #ffffff;
-$black: #000000;
+@import 'intersections';
 
-// Base Material palette teal:
-$teal-base: #62d3bd;
 
 $yellow-base: #fcd606;
-
+$teal-main-rgb: "0,190,164";
 
 // Some 
 
@@ -32,5 +29,3 @@ $header-color: rgba(0, 0, 0, 0.7);
 #color {
 	
 }
-
-

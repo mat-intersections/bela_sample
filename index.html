@@ -14,33 +14,25 @@
 
 <div id="main">
 	<div class="sidebar">
-		<a href="#intro">Intro</a>
+		<a href="#intro" class="no-plus">Intro</a>
+		<a href="#name-language" class="no-plus">Name and language</a>
+		<a href="#logo">Logo</a>
+			<span class="sublinks logo_section">
+				<a href="#logo-howto">How to use</a>
+				<a href="#logo-dont">How not to use</a>
+			</span>
 		<a href="#text">Text</a>
 			<span class="sublinks text_section">
-				<a href="#fonts">Fonts</a>
-				<a href="#print-fonts">Print Fonts</a>
+				<a href="#bodytext">Body Text</a>
+				<a href="#headings">Headings</a>
 				<a href="#anchor-tags">Anchor Tags</a>
 			</span>
-		<a href="#color">Color</a>
-			<span class="sublinks color_section">
-				<a href="#base-color">Base color scheme</a>
-				<a href="#using-grey">Using grey</a>
-				<a href="#text-over-color">A note on text over colour</a>
-			</span>
-		<a href="#menus">Menus</a>
-			<span class="sublinks menus_section">
-				<a href="#accordion">Accordion menu</a>
-				<a href="#file-dropdown">File dropdown</a>
-				<a href="#mini-dropdown">Mini dropdown</a>
-			</span>
-		<a href="#inputs">Inputs</a>
-			<span class="sublinks inputs_section">
-				<a href="#buttons">Buttons</a>
-				<a href="#switches">Switches</a>
-				<a href="#number-selector">Number selectors</a>
-				<a href="#text-boxes">Text boxes</a>
-				<a href="#sliders">Sliders</a>
-				<a href="#radio-buttons">Radio buttons</a>
+		<a href="#colour">Colour</a>
+			<span class="sublinks colour_section">
+				<a href="#using-colour">Using colour</a>
+				<a href="#base-colours">Base colours</a>
+				<a href="#accent-colours">Accent colours</a>
+				<a href="#text-over-colour">A note on text over colour</a>
 			</span>
 		<a href="#data">Data</a>
 			<span class="sublinks data_section">
@@ -56,7 +48,16 @@
 		<h1>This is the Inter/sections design library.<span id="intro" class="positioner"></span></h1>
 		<p>Since 2016, Inter/sections has been a symposium organised by the PhD students in the <a href='http://mat.qmul.ac.uk'>Media and Arts Technology program at Queen Mary University of London</a>.</p>
 
-		<p>The purpose of this pattern library is to provide a cohesive description of the design elements (colours, font choices, appearance, etc) for Inter/sections, so future students have a base from which to build the brand for further iterations of this symposium.</p>
+		<p>The purpose of this pattern library is to provide a cohesive description of the design elements (colours, font choices, appearance, etc.) for Inter/sections, so future students have a base from which to build the brand for further iterations of this symposium.</p>
+
+
+		<h2>Resources</h2>
+		
+		<p>The most up-to-date versions of all assets and templates are <a href="https://github.com/mat-intersections/assets">located on GitHub</a>. If you're building something important, put it on this GitHub. If you're updating something, modify the relevant file on GitHub. Research versions and single-use assets should live in the Google Drive of the relevant edition, but any potentially re-usable component should be on the GitHub.</p>
+		
+		<p>This document references the type of assets that exist on the GH repo (for example the logo, swatches, fonts) but you might find other things there.</p>
+		
+		<h2>Credits</h2>
 
 		<p>Past Inter/sections design teams:</p>
 		<ul>
@@ -64,282 +65,233 @@
 			<li><strong>2016:</strong> Daniel Gàbana, Soomi Park, Astrid Bin</li>
 		</ul>
 
-		<p>For suggestions or to report problems, please open a <a href="https://github.com/mat-intersections/pattern-library/issues">GitHub issue</a>.</p>
+		<p>For suggestions or to report problems, please open a <a href="https://github.com/mat-intersections/pattern-library/issues">GitHub issue</a>. Please update the above lists yearly so that those after you know who to contact if they have questions!</p>
 
 		<p>Last updated: June 2017, by <a href="http://github.com/disastrid">Astrid Bin</a> &amp; <a href="http://github.com/victorloux">Victor Loux</a>.</p>
 	</section>
+	
+		<hr />
 
-	<hr />
+		<section>
+				<h1>Name and language<span id="name-language" class="positioner"></span></h1>
+				<h2>Title<span id="fonts" class="sub-positioner"></span></h2>
+					<p>The name of this event is Inter/sections. Please note that the name should be spelled: <strong>Inter/sections</strong>.</p>
+					
+				<p>
+					<i class="fa fa-times-circle warning" aria-hidden="true"></i> Do not write it as Inte<strong>rs</strong>ections, Inte<strong>r/S</strong>ections, or INTER/SECTIONS (unless it is part of an all-caps sentence).
+				</p>
+				
+				<p>Consistently using the slash in the text form is important: we had to adopt this to differentiate ourselves from different events also called Intersections which popped up after the first edition, so it's not (just!) there as a stylisation trick to remind of the logo.</p>
+		</section>
 
+ 	<hr />
+	
 	<section>
-			<h1>Name and language<span id="text" class="positioner"></span></h1>
-			<h2>Title<span id="fonts" class="sub-positioner"></span></h2>
-				<p>The name of this event is Inter/sections. Please note that the name should be spelled: <strong>Inter/sections</strong>.</p>
+
+			<h1>Logo<span id="logo" class="positioner"></span></h1>
+			<h2>How to use<span id="logo-howto" class="sub-positioner"></span></h2>
+
+				<p>The correct versions of the logo are available <a href="https://github.com/mat-intersections/assets/tree/master/Logo">in the assets repository</a>. Note that the 2016 and the initial 2017 logos were differents (lighter) than the current versions; so if you find these versions, do not use them and pick the ones in the repo.</p>
+				
+				<p>Most of the time, the horizontal (landscape) version should be used.</p>
+				
+				<img class="full-width" src="images/logo-horizontal.png" alt="Intersections logo">
+
+				
+				<p>Where the logo needs to be laid over a dark background, an on-dark version of the logo also exists, with the text being white and very small optical corrections on the text paths to ensure contrast.</p>
+
+				<img class="full-width" src="images/logo-horizontal-dark.png" alt="Intersections logo">
+				
+				<p>Minimum spacing should be applied as per the proportions below. One unit/circle = height from the top of INTER to the bottom of SECTIONS, need to be kept empty above and below the wordmark, and on each side of the logo:</p>
+
+				<img class="full-width" src="images/logo-proportions.png" alt="Intersections logo">
+				
+				<p>“Boy does this sound complex!” I know buddy, this is why the logos in the repository are cropped perfectly. Normally you should get a bounding box around the logo which corresponds to these proportions: do not put anything else within that bounding box.</p>
+
+			<h2>How not to use the logo<span id="logo-dont" class="sub-positioner"></span></h2>
+			
+				<img class="full-width" src="images/logo-wrong-uses.png" alt="Description of wrong uses of the logo">
+
 	</section>
+	
+ 	<hr />
 
 	<section>
 
 			<h1>Text<span id="text" class="positioner"></span></h1>
-			<h2>Fonts<span id="fonts" class="sub-positioner"></span></h2>
+			<h2>Body text<span id="bodytext" class="sub-positioner"></span></h2>
 			
-				<p>Text generally uses the font Poppins.</p>	
-				<p>This is the usual font weight. <span class="bold">I can also be a bit bolder,</span> <span class="bolder">a little bolder still,</span> <span class="boldest">or really bold indeed.</span></p>
-				<p class="console">If I'm text in a console, I use a different font entirely: Inconsolata.</p>
-				<div class="wrapper">
-					<span class="code">There's even a class for code.</span>
-				</div>
+				<p>Body text uses the font <a href="https://github.com/JulietaUla/Montserrat">Montserrat</a> by Julieta Ulanovsky.</p>	
 
-			<h2>Print and other fonts<span id="print-fonts" class="sub-positioner"></span></h2>
-				<p>The fonts used for the IDE are Poppins and Space. However, for print the main font is Montserrat. It's slighty more decorative which looks better on paper and as a standalone element (ie, as a URL in a logo or a single word on a webpage), but it was busy for the IDE. Here's some samples of Montserrat for use in online and print applications:</p>
-				<p class="mont-hair">This is Montserrat Hairline.</p>
-				<p class="mont-light">This is Montserrat Light.</p>
-				<p class="mont-reg">This is Montserrat Regular.</p>
-				<p class="mont-bold">This is Montserrat Bold - usually our URLs are in this font.</p>
-				<p>This use of Montserrat is being phased out, probably in favour of Poppins, though this isn't firm yet.</p>
+				<p>We use three weights:</p>
+				
+				<ul>
+					<li>Regular (this text)</li>
+					<li><span class="semibold">Semibold in rare occasions</span></li>
+					<li><strong>Bold to have emphasis.</strong></li>
+				</ul>
+				
+			<h2>Headings<span id="headings" class="sub-positioner"></span></h2>
+
+				<p>Headings are set in <a href="https://github.com/nathco/Office-Code-Pro">Office Code Pro</a>, by Nathan Rutsky. Headings are <strong>always in full caps</strong>.</p>
+				
+				<p>The weight depends on the absolute importance of the heading (&lt;h1&gt; to &lt;h3&gt; = Bold; lower = Medium; do not use other weights). Headings also generally have a lower tracking (letter-spacing) but there is no strict rule on this (as this will depend on the optical size of your header; judge by eye based on existing applications on print and web).</p>
+				
+				<span class="heading-example">Example of a header</span><br>
+				<span class="small-heading-example">Example of a small header</span>
+
+				<p><i class="fa fa-info-circle warning" aria-hidden="true"></i> It's worth noting that the webfonts included in this pattern library and in the resources are an <strong>optimised subset</strong> of the normal font, they do not have the lowercase letters nor many special characters (to save on the filesize). If your titles ever look weird this might be why and you'll need to regenerate it on Fontsquirrel using Advanced options.</p>
 
 				<h2>Anchor tags<span id="anchor-tags" class="sub-positioner"></h2>
-				<p>Currently <a href='#'>this</a> is the style for links.</p>
-		<!-- This section displays different text elements. -->
+				<p>Hyperlinks <a href="javascript:return false;">look like this one</a>: standard underline, and in teal. If the text is teal on white then links should be a light shade of teal (@TODO).</p>
 	</section>
 
 	<hr />
 
 	<section>
-		<h1>Color<span id="color" class="positioner"></span></h1>
-			<h2>Color scheme<span id="base-color" class="sub-positioner"></span></h2>
-				<p>The color scheme for Inter/sections was developed in 2016, and consists of two color families.
+		<h1>Colour<span id="colour" class="positioner"></span></h1>
+			<h2>Using colours<span id="using-colour" class="sub-positioner"></span></h2>
+				<p>The colour scheme for Inter/sections was developed in 2016, and consists of two colour families: base colours, and accent colours. Base colours (from the logo) should ideally remain the same every year, whereas accent colours can vary between editions.</p>
+
+				<p>To use colours, refer to the tables below. On the web, always import <a href="https://github.com/mat-intersections/assets/tree/master/Swatches">the SCSS file that can be found in the assets repository</a>: variables are named with a prefix (row) to indicate hue, and the suffix (column) to indicate the saturation. For example to get a full teal (first cell) you would call <code>$teal-base</code>.</p>
+				
+				<p>On print, import the ASE (Swatch Exchange) file that is <a href="https://github.com/mat-intersections/assets/tree/master/Swatches">also available in the repository</a>. InDesign, Illustrator and Photoshop support this: <a href="http://i.imgur.com/ZjhgR1p.jpg">click the little arrow in the Swatches palette, and choose Load Swatch</a>. This will avoid lengthy and error-prone copying and pasting: all the colours will be there!</p>
+
+				<p><i class="fa fa-times-circle warning" aria-hidden="true"></i> Do not apply a tint, or lowered opacity, on a full colour. Use the colour variations available in the swatches below instead.</p>
+
+			<h2>Base colours<span id="base-colours" class="sub-positioner"></span></h2>
+
 			<table class="color-table">
+				
 				<tr>
-					<td style="margin-left: -10px"><p>Opacity</p></td>
-					<td><p>$teal-base</p><p>#009587</p> </td>
-					<td><p>$teal-main</p><p>#00bea4</p> </td>
-					<td><p>$teal-01</p><p>#1ce8b5</p> </td>
-					<td><p>$teal-02</p><p>#63ffd9</p> </td>
-					<td><p>$teal-03</p><p>#a6ffea</p> </td>
-				</tr> 
+					<td></td>
+					<td><p>-base</p></td>
+					<td><p>-main</p></td>
+					<td><p>-01</p></td>
+					<td><p>-02</p></td>
+					<td><p>-03</p></td>
+				</tr>
+				
 				<tr style="height: 100px;">
-					<td><p>100%:</p></td>
-					<td class="color base"></td>
-					<td class="color main" ></td>
-					<td class="color accent-1"></td>
-					<td class="color accent-2"></td>
-					<td class="color accent-3"></td>
+					<td><p>$teal-</p></td>
+					<td class="color colour-teal-base"></td>
+					<td class="color colour-teal-main"></td>
+					<td class="color colour-teal-01"></td>
+					<td class="color colour-teal-02"></td>
+					<td class="color colour-teal-03"></td>
 				</tr>
-				<tr>
-					<td><p>80%:</p></td>
-					<td class="color base trans-8"></td>
-					<td class="color main trans-8"></td>
-					<td class="color accent-1 trans-8"></td>
-					<td class="color accent-2 trans-8"></td>
-					<td class="color accent-3 trans-8"></td>
+				
+				<tr style="height: 100px;">
+					<td><p>$gold-</p></td>
+					<td class="color colour-gold-base"></td>
+					<td class="color colour-gold-main"></td>
+					<td class="color colour-gold-01"></td>
+					<td class="color colour-gold-02"></td>
+					<td class="color colour-gold-03"></td>
 				</tr>
-				<tr>
-					<td><p>60%:</p></td>
-					<td class="color base trans-6"></td>
-					<td class="color main trans-6"></td>
-					<td class="color accent-1 trans-6"></td>
-					<td class="color accent-2 trans-6"></td>
-					<td class="color accent-3 trans-6"></td>
-				</tr>
-				<tr>
-					<td><p>40%:</p></td>
-					<td class="color base trans-4"></td>
-					<td class="color main trans-4"></td>
-					<td class="color accent-1 trans-4"></td>
-					<td class="color accent-2 trans-4"></td>
-					<td class="color accent-3 trans-4"></td>
-				</tr>
-				<tr>
-					<td><p>20%:</p></td>
-					<td class="color base trans-2"></td>
-					<td class="color main trans-2"></td>
-					<td class="color accent-1 trans-2"></td>
-					<td class="color accent-2 trans-2"></td>
-					<td class="color accent-3 trans-2"></td>
+				
+				
+				<tr style="height: 100px;">
+					<td><p>$grey-</p></td>
+					<td class="color colour-grey-base"></td>
+					<td class="color colour-grey-main"></td>
+					<td class="color colour-grey-01"></td>
+					<td class="color colour-grey-02"></td>
+					<td class="color colour-grey-03"></td>
 				</tr>
 			</table>
 
-			<h2>Using grey<span id="using-grey" class="sub-positioner"></span></h2>
-			<p>Grey is black with transparency applied, not a hex value.</p>
-			<p>As with the colour scheme, the grey tones are variables within the pattern library system, though they are not in even steps of 20%. The grey values for each variable is listed below.</p>
+			<h2>Accent colours<span id="accent-colours" class="sub-positioner"></span></h2>
+
 			<table class="color-table">
+				
 				<tr>
-					<td style="padding-left: 40px"><p>Opacity</p></td>
-					<td style="padding-left: 25px"><p>Result</p></td>
+					<td></td>
+					<td><p>-base</p></td>
+					<td><p>-main</p></td>
+					<td><p>-01</p></td>
+					<td><p>-02</p></td>
+					<td><p>-03</p></td>
 				</tr>
-				<tr>
-					<td><p>$black (100%)</p></td>
-					<td class="black"></td>
-				</tr>
-				<tr>
-					<td><p>$grey-dark (60%)</p></td>
-					<td class="grey-dark"></td>
-				</tr>
-				<tr>
-					<td><p>$grey-mid (30%)</p></td>
-					<td class="grey-mid"></td>
-				</tr>
-				<tr>
-					<td><p>$grey-light (10%)</p></td>
-					<td class="grey-light"></td>
-				</tr>
-				<tr>
-					<td><p>$grey-ultralight (5%)</p></td>
-					<td class="grey-ultralight"></td>
-				</tr>
-				</table>
 
-			<p>* Please note: These colour rules are for RGB only and do not extend to print.</p>
+				<tr style="height: 100px;">
+					<td><p>$blue-</p></td>
+					<td class="color colour-blue-base"></td>
+					<td class="color colour-blue-main"></td>
+					<td class="color colour-blue-01"></td>
+					<td class="color colour-blue-02"></td>
+					<td class="color colour-blue-03"></td>
+				</tr>
+				
+				
+				<tr style="height: 100px;">
+					<td><p>$ruby-</p></td>
+					<td class="color colour-ruby-base"></td>
+					<td class="color colour-ruby-main"></td>
+					<td class="color colour-ruby-01"></td>
+					<td class="color colour-ruby-02"></td>
+					<td class="color colour-ruby-03"></td>
+				</tr>
+				
+				
+				<tr style="height: 100px;">
+					<td><p>$coal-</p></td>
+					<td class="color colour-coal-base"></td>
+					<td class="color colour-coal-main"></td>
+					<td class="color colour-coal-01"></td>
+					<td class="color colour-coal-02"></td>
+					<td class="color colour-coal-03"></td>
+				</tr>
+				
+				<tr>
+					<td><p>DIY</p></td>
+					<td class="diy-colour">
+						<p>
+							H: any<br>
+							S: 60-85<br>
+							L: 50-85
+						</p>
+					</td>
+					<td class="diy-colour">
+						<p>
+							H: any<br>
+							S: 60-90<br>
+							L: 63-95
+						</p>
+					</td>
+					<td class="diy-colour">
+						<p>
+							H: any<br>
+							S: 50-98<br>
+							L: 78-99
+						</p>
+					</td>
+					<td class="diy-colour">
+						<p>
+							H: any<br>
+							S: 11-18<br>
+							L: 92-97
+						</p>
+					</td>
+					<td class="diy-colour">
+						<p>
+							H: any<br>
+							S: 2-9<br>
+							L: 93-98
+						</p>
+					</td>
+				</tr>
+			</table>
 
-			<h2>A note on text over colours<span id="text-over-color" class="sub-positioner"></span></h2>
-			<p>When making text over a colour lighter, do not make the text grey - always use black (RGB 0,0,0 or #000000) and adjust the alpha value.</p>
-			<p style="display: inline">For example, the box on the left uses</p> <p class="console code" style="display: inline">color: rgba(0,0,0,0.5)</p>, <p style="display: inline">while the one on the right uses the equivalent hex code for middle grey, </p> <p class="console code " style="display: inline">color: #7d7d7d</p>. <p>There's definitely a difference in readability, particularly with higher resolution screens.</p>
+			<h2>A note on text over colours<span id="text-over-colour" class="sub-positioner"></span></h2>
+
+			<p>In general aim for the highest contrast possible: always use a full colour (<code>-base</code> or <code>-main</code> <strong>on top of</strong> white, or a <code>-02</code> or <code>-03</code> shade; or the inverse). When in doubt check if the <a href="https://www.w3.org/TR/WCAG20/#contrast-ratiodef">contrast ratio</a> is greater than <strong>4.5:1</strong>, or 3:1 for large headings.</p>
+
+			<p>When making text over a lighter colour, do not make the text grey - either use pure black or a full (-base) colour, and adjust the alpha value.</p>
+			<p style="display: inline">For example, the box on the left uses</p> <p class="console code" style="display: inline">colour: rgba(0,0,0,0.5)</p>, <p style="display: inline">while the one on the right uses the equivalent hex code for middle grey, </p> <p class="console code " style="display: inline">colour: #7d7d7d</p>. <p>There's definitely a difference in readability, particularly with higher resolution screens.</p>
 			<div class="readable"><p>Readable</p></div>
 			<div class="less-readable"><p>Less readable</div>
-		<!-- This section shows how colour should be used in all Bela projects. -->
 	</section>
-
-	<hr />
-
-	<section>
-		<h1>Menus<span id="menus" class="positioner"></span></h1>
-		<!-- This section shows off different ways of selecting from a number of options. -->
-		<h2>Accordion Menu<span id="accordion" class="sub-positioner"></span></h2>
-			<div class="wrapper">
-				<button class="accordion">I am an accordion menu</button>
-				<div class="panel">
-					<p>I am some content that shows when the accordion button is pressed.</p>
-				</div>
-				<button class="accordion">I am another accordion button</button>
-				<div class="panel">
-					<p>The content panel is shown and hidden using JS when the menu header is clicked.</p>
-				</div>
-				<button class="accordion">Lookout, I'm a third accordion button</button>
-				<div class="panel">
-					<button class="accordion sub">And I'm a sub-menu!</button>
-					<div class="panel sub">
-						<p>The same JS that shows the main content also shows the sub content!</p>
-					</div>
-				</div>
-			</div>
-
-			<h2>Dropdown menu: Files<span id="file-dropdown" class="sub-positioner"></span></h2>
-			<p>This element should, traditionally, be an input drop-down. However I have taken the liberty of making it a bit fancy because picking a file name is a significant event that happens on its own as an atomic action, and is not part of a larger set of choices (the way that, for example, changing settings are where you might be adjusting many values as part of the action "changing settings"). Therefore, this is a list of links in a hidden <span class="code">div</span> element, instead of a list of options in a <span class="code">select</span> input element.</p>
-			<div class="wrapper">
-				<span class="dropdown">
-					<button class="file-dropdown" name="project-dropdown">Select a project ...</button>
-					<div id="project-dropdown" class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</span>
-			</div>
-
-			<h2>Dropdown menu: mini<span id="mini-dropdown" class="sub-positioner"></span></h2>
-				<p>This dropdown belongs in the Input section above, but it's good to have it here to see the difference between the file dropdown and this option dropdown.</p>
-
-				<p>In an option dropdown we can adjust the styling and mess with the shadow DOM a little, but some important functionality has to be maintained (which is why it's not just a file dropdown, like the one above). For example, an option dropdown should allow the user to select a number with the arrow keys or press enter to select, and tab to the next dropdown element. This is useful for situations such as the Settings tab where there's lots of small values to adjust, but isn't vital for choosing a project name, which is why we have taken liberties above but not here.</p>
-
-				<p>This dropdown has styles for both active and disabled states.</p>
-			<div class="wrapper">
-				<div class="left-choice">Choose a number:</div>
-					<div class="right-choice">
-						<span class="mini-dropdown">
-							<select type="text" id="block-size">
-								<option>65</option>
-								<option>456</option>
-								<option>3</option>
-								<option selected>68</option>
-								<option>263</option>
-							</select><!-- end dropdown span -->
-						</span>
-					</div><!-- end rightchoice -->
-					<br /><br />
-					<div class="left-choice">Choose another:</div>
-					<div class="right-choice">
-						<span class="mini-dropdown disabled">
-						<select disabled type="text" id="block-size">
-							<option>2</option>
-							<option>8</option>
-							<option>16</option>
-							<option selected>64</option>
-							<option>128</option>
-						</select><!-- end dropdown span -->
-						</span>
-					</div>
-				</div><!-- end wrapper -->
-	</section>
-
-	<hr />
-
-	<section>
-		<h1>Inputs<span id="inputs" class="positioner"></span></h1>
-
-		<h2>Buttons<span id="buttons" class="sub-positioner"></span></h2>
-		<button>Here is a button</button>
-		<button disabled>Now it's disabled</button>
-		<p><button class="create-project">We can use this to create files</button></p>
-
-		<h2>Switches<span id="switches" class="sub-positioner"></span></h2>
-		<p>Here's some boolean switches that you can turn on and off:</p>
-
-		<input class="checkbox-slider" type="checkbox" checked></input>
-		<br />
-		<input class="checkbox-slider" type="checkbox"></input>
-		<p>We can also disable it:</p>
-
-		<input class="checkbox-slider" type="checkbox" disabled></input>
-		<!-- All kinds of buttons, selectors, and form elements. -->
-		<h2>Number selectors<span id="number-selector" class="sub-positioner"></span></h2>
-		<p>Select a number:</p>
-		<span class="number-picker">
-			<span class="number decrement" name="example"><i class="fa fa-minus"></i></span><input id="example" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="1"><span name="example" class="number increment"><i class="fa fa-plus"></i></span>
-		</span>
-		<p>Disabled selector: </p>
-		<span class="number-picker">
-			<span name="example-disabled" class="number decrement"><i class="fa fa-minus"></i></span><input disabled id="example-disabled" class="input-number" type="text" data-func="setCLArg" value="5" min="0" max="10" step="0.1"><span name="example-disabled" class="number increment"><i class="fa fa-plus"></i></span>
-		</span>
-
-		<h2>Text box inputs<span id="text-boxes" class="sub-positioner"></span></h2>
-		<div class="wrapper">
-			<p>This is a text box: <input type="text"></input></p>
-			<p>Now it's disabled: <input type="text" disabled></div></p>
-		
-
-		<h2>Sliders<span id="sliders" class="sub-positioner"></span></h2>
-		<div class="wrapper">
-			<p>Here are some sliders you can adjust. There is a difference in appearance when a slider is in focus, or not in focus:</p>
-			<input class="range-slider" type="range"></input>
-			<input class="range-slider" type="range"></input>
-			<input class="range-slider" type="range"></input>	
-			<p>We can also disable sliders:</p>
-			<input class="range-slider" type="range" disabled></input>
-		</div>
-
-	<h2>Radio buttons<span id="radio-buttons" class="sub-positioner"></span></h2>
-	<div class="wrapper">
-		<p>A radio button is used to indicate a single choice from a range of options.
-		<div class="radio">
-			<ul>
-				<li><input type="radio" id="cplus" name="selector">
-				<label for="cplus">C++</label>
-				<div class="check"></div>
-				</li>
-
-				<li><input type="radio" id="pd" name="selector">
-				<label for="pd">Pure Data</label>
-				<div class="check"></div>
-				</li>
-
-				<li><input type="radio" id="supercollider" name="selector">
-				<label for="supercollider">Super Collider</label>
-				<div class="check"></div>
-				</li>
-			</ul>
-		</div>
-	</section>
-
 
 	<hr />
 

@@ -59,41 +59,16 @@ table {
 			font-family: inherit;
 			color: black;
 			vertical-align: middle;
-			}
-		&.base {
-			background: $teal-base;
 		}
-		&.main {
-			background: $teal-main;
-		}
-		&.accent-1 {
-			background: $teal-01;
-		}
-		&.accent-2 {
-			background: $teal-02;
-		}
-		&.accent-3 {
-			background: $teal-03;
-			> p {
-				z-index: 100;
-				color: rgba($black, 0.5);
-			}
-		}
-		&.trans-8 {
-			opacity: 0.8;
-		}
-		&.trans-6 {
-			opacity: 0.6;
-		}
-		&.trans-4 {
-			opacity: 0.4;
-		}
-		&.trans-2 {
-			opacity: 0.2;
+		
+		&.diy-colour {
+			padding: 0;
+			width: 100px;
 
-		}
-		&.trans-1 {
-			opacity: 0.1;
+			p {
+				font-size: 0.8em !important;
+				margin: 0
+			}
 		}
 		&.grey-dark {
 			background: $grey-dark;
@@ -111,4 +86,143 @@ table {
 			background: $black;
 		}
 	}
+}
+
+// Class names
+// 
+// To generate run this in SassMeister then add $
+// (Sass doesn't support interpolating/dynamic variable names)
+// 
+// $hues: "teal", "gold", "grey", "blue", "ruby", "coal";
+// $variations: "base", "main", "01", "02", "03";
+// 
+// @each $hue in $hues {
+//   @each $variation in $variations {
+//     .colour-#{$hue}-#{$variation} {
+//       background-color: #{$hue}-#{$variation};
+//     }
+//   }
+// }
+
+
+// @TODO: add these on the HTML
+
+.colour-teal-base {
+  background-color: $teal-base;
+}
+
+.colour-teal-main {
+  background-color: $teal-main;
+}
+
+.colour-teal-01 {
+  background-color: $teal-01;
+}
+
+.colour-teal-02 {
+  background-color: $teal-02;
+}
+
+.colour-teal-03 {
+  background-color: $teal-03;
+}
+
+.colour-gold-base {
+  background-color: $gold-base;
+}
+
+.colour-gold-main {
+  background-color: $gold-main;
+}
+
+.colour-gold-01 {
+  background-color: $gold-01;
+}
+
+.colour-gold-02 {
+  background-color: $gold-02;
+}
+
+.colour-gold-03 {
+  background-color: $gold-03;
+}
+
+.colour-grey-base {
+  background-color: $grey-base;
+}
+
+.colour-grey-main {
+  background-color: $grey-main;
+}
+
+.colour-grey-01 {
+  background-color: $grey-01;
+}
+
+.colour-grey-02 {
+  background-color: $grey-02;
+}
+
+.colour-grey-03 {
+  background-color: $grey-03;
+}
+
+.colour-blue-base {
+  background-color: $blue-base;
+}
+
+.colour-blue-main {
+  background-color: $blue-main;
+}
+
+.colour-blue-01 {
+  background-color: $blue-01;
+}
+
+.colour-blue-02 {
+  background-color: $blue-02;
+}
+
+.colour-blue-03 {
+  background-color: $blue-03;
+}
+
+.colour-ruby-base {
+  background-color: $ruby-base;
+}
+
+.colour-ruby-main {
+  background-color: $ruby-main;
+}
+
+.colour-ruby-01 {
+  background-color: $ruby-01;
+}
+
+.colour-ruby-02 {
+  background-color: $ruby-02;
+}
+
+.colour-ruby-03 {
+  background-color: $ruby-03;
+}
+
+.colour-coal-base {
+  background-color: $coal-base;
+}
+
+.colour-coal-main {
+  background-color: $coal-main;
+}
+
+.colour-coal-01 {
+  background-color: $coal-01;
+}
+
+.colour-coal-02 {
+  background-color: $coal-02;
+}
+
+.colour-coal-03 {
+  background-color: $coal-03;
 }
