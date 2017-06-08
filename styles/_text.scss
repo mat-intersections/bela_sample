@@ -6,32 +6,23 @@
 
 a {
 	color: $teal-base;
-	text-decoration: none;
-	position: relative;
+
 	&:hover {
-		color: rgba($teal-main, 0.6);
+		color: $teal-main;
 	}
-	&:after {
-		position: absolute;
-		border-bottom: 1px dotted $black;
-		content: '';
-		height: 1px;
-		left: 0;
-		bottom: 2px;
-	}
-	&:hover:after {
-		width: 100%;
-    }
-    transition-delay: 0.2s;
-    transition: $trans-reg ease-in-out;	
 }
 
-section h1 {
+section h2 {
 	font-family: $heading-font-stack;
-	font-size: 24px;
-	line-height: 20px;
+	font-size: 1.7em;
+	line-height: 1.1em;
 	text-transform: uppercase;
-	color: $header-color;
+	color: $white;
+	background-color: $teal-base;
+	display: inline-block;
+	padding: .2em .6em;
+	margin-left: -.6em;
+
 	&.hero-title {
 		padding: 0 0 0 30px;
 		font-size: 48px;
@@ -45,7 +36,7 @@ section h1 {
 	}
 }
 
-h2 {
+h3 {
 	&.hero-title {
 		font-family: $heading-font-stack;
 		padding-left: 10%;
@@ -63,19 +54,15 @@ span.code {
 		margin: 0;
 		font-family: $code-font-stack;
 		line-height: 20px;
-	}
+}
+
 p {
-	&.mont-reg {
-		font-family: $text-font-stack;
-	}
-	&.mont-bold {
-		font-family: $text-font-stack;
-		font-weight: bold;
-	}
 	&.intro {
 		padding: 0 10%;
 	}
+	font-size: 1em;
 	display: block;
+	width: 86%;
 }
 
 .readable {
